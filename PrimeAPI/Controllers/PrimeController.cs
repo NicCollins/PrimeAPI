@@ -38,7 +38,7 @@ namespace PrimeAPI.Controllers
         // POST api/prime
         public string Post([FromBody]string value)
         {
-            return "test";
+            return value;
         }
 	}
 }

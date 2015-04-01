@@ -20,12 +20,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Numerics;
 
-namespace PrimeAPI.BusinessLogic
+namespace PrimeAPI.Models
 {
-    public class PrimeBusiness
+    public class Number
     {
-        
+        public byte[] TestNumber { get; set; }
+        public byte[] Divisor { get; set; }
+        public bool IsDivisible { get; set; }
+        public int ActorId { get; set; }
     }
 }
