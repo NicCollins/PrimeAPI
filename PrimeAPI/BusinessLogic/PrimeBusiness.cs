@@ -21,11 +21,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Numerics;
+using PrimeAPI.Models;
 
 namespace PrimeAPI.BusinessLogic
 {
     public class PrimeBusiness
     {
-        
+        public List<Number> GetNumbers(int actorId)
+        {
+            List<Number> numbers = new List<Number>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                numbers[] = GetNumberToTest(i, actorId);
+            }
+
+            return numbers;
+        }
+
+        private Number GetNumberToTest(int i, int actorId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -23,16 +23,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using PrimeAPI.BusinessLogic;
+using PrimeAPI.Models;
 
 
 namespace PrimeAPI.Controllers
 {
     public class PrimeController : ApiController
     {
-        // GET api/prime
-        public string Get()
+        public PrimeBusiness PrimeBusiness = new PrimeBusiness();
+        // GET api/prime/42
+        public List<Number> Get(int actorId)
         {
-            return "test";
+            return PrimeBusiness.GetNumbers(actorId);
         }
 
         // POST api/prime
