@@ -39,9 +39,11 @@ namespace PrimeAPI.Controllers
         }
 
         // POST api/prime
-        public string Post([FromBody]string value)
+        public string Post([FromBody]List<Number> numbers)
         {
-            return value;
+            PrimeBusiness.UpdateNumbers(numbers);
+
+            return "success";
         }
 	}
 }

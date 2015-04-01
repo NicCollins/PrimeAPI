@@ -43,5 +43,18 @@ namespace PrimeAPI.BusinessLogic
         {
             throw new NotImplementedException();
         }
+
+        public void UpdateNumbers(List<Number> numbers)
+        {
+            foreach (Number number in numbers)
+            {
+                UpdateNumber(number);
+            }
+        }
+
+        private void UpdateNumber(Number number)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
